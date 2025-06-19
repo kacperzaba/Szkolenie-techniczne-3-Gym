@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gym.Client", "Gym.Client\Gym.Client.csproj", "{0F7FD74E-300A-435A-9A6A-D1954C021466}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gym.Client.CrossCutting", "Gym.Client.CrossCutting\Gym.Client.CrossCutting.csproj", "{FA9D6073-D811-4FC2-84F1-5744441D9D2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gym.Client.Storage", "Gym.Client.Storage\Gym.Client.Storage.csproj", "{DE47EE91-354C-449B-965E-589AC92E5D57}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{63A96EBA-6674-4521-8C59-6C26C47448A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gym.Subscription", "Gym.Subscription\Gym.Subscription.csproj", "{D15A993E-3E21-4834-8273-246D23E0BF11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gym.Subscription.CrossCutting", "Gym.Subscription.CrossCutting\Gym.Subscription.CrossCutting.csproj", "{1FFA17DE-E44C-49BD-9CCD-CC79362566EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gym.Subscription.Storage", "Gym.Subscription.Storage\Gym.Subscription.Storage.csproj", "{42C1E26D-17CF-49BF-AF03-85E6353A45AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Subscription", "Subscription", "{D8BFFD11-7AEB-49B0-9A6B-CE214E5E5A2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gym.FitnessClass", "Gym.FitnessClass\Gym.FitnessClass.csproj", "{BF901D3A-F681-40AB-B959-CFC3555392DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gym.FitnessClass.CrossCutting", "Gym.FitnessClass.CrossCutting\Gym.FitnessClass.CrossCutting.csproj", "{7477F003-42B8-4EA4-B8CA-4832CB2431AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gym.FitnessClass.Storage", "Gym.FitnessClass.Storage\Gym.FitnessClass.Storage.csproj", "{A47DA5A4-15DB-472A-AC4D-E059583EDFB2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FitnessClass", "FitnessClass", "{26C082A6-399D-4FBF-A9AC-77287D77C074}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F7FD74E-300A-435A-9A6A-D1954C021466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F7FD74E-300A-435A-9A6A-D1954C021466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F7FD74E-300A-435A-9A6A-D1954C021466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F7FD74E-300A-435A-9A6A-D1954C021466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA9D6073-D811-4FC2-84F1-5744441D9D2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA9D6073-D811-4FC2-84F1-5744441D9D2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA9D6073-D811-4FC2-84F1-5744441D9D2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA9D6073-D811-4FC2-84F1-5744441D9D2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE47EE91-354C-449B-965E-589AC92E5D57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE47EE91-354C-449B-965E-589AC92E5D57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE47EE91-354C-449B-965E-589AC92E5D57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE47EE91-354C-449B-965E-589AC92E5D57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D15A993E-3E21-4834-8273-246D23E0BF11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D15A993E-3E21-4834-8273-246D23E0BF11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D15A993E-3E21-4834-8273-246D23E0BF11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D15A993E-3E21-4834-8273-246D23E0BF11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FFA17DE-E44C-49BD-9CCD-CC79362566EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FFA17DE-E44C-49BD-9CCD-CC79362566EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FFA17DE-E44C-49BD-9CCD-CC79362566EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FFA17DE-E44C-49BD-9CCD-CC79362566EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42C1E26D-17CF-49BF-AF03-85E6353A45AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42C1E26D-17CF-49BF-AF03-85E6353A45AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42C1E26D-17CF-49BF-AF03-85E6353A45AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42C1E26D-17CF-49BF-AF03-85E6353A45AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF901D3A-F681-40AB-B959-CFC3555392DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF901D3A-F681-40AB-B959-CFC3555392DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF901D3A-F681-40AB-B959-CFC3555392DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF901D3A-F681-40AB-B959-CFC3555392DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7477F003-42B8-4EA4-B8CA-4832CB2431AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7477F003-42B8-4EA4-B8CA-4832CB2431AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7477F003-42B8-4EA4-B8CA-4832CB2431AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7477F003-42B8-4EA4-B8CA-4832CB2431AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A47DA5A4-15DB-472A-AC4D-E059583EDFB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A47DA5A4-15DB-472A-AC4D-E059583EDFB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A47DA5A4-15DB-472A-AC4D-E059583EDFB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A47DA5A4-15DB-472A-AC4D-E059583EDFB2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0F7FD74E-300A-435A-9A6A-D1954C021466} = {63A96EBA-6674-4521-8C59-6C26C47448A8}
+		{FA9D6073-D811-4FC2-84F1-5744441D9D2F} = {63A96EBA-6674-4521-8C59-6C26C47448A8}
+		{DE47EE91-354C-449B-965E-589AC92E5D57} = {63A96EBA-6674-4521-8C59-6C26C47448A8}
+		{D15A993E-3E21-4834-8273-246D23E0BF11} = {D8BFFD11-7AEB-49B0-9A6B-CE214E5E5A2B}
+		{1FFA17DE-E44C-49BD-9CCD-CC79362566EE} = {D8BFFD11-7AEB-49B0-9A6B-CE214E5E5A2B}
+		{42C1E26D-17CF-49BF-AF03-85E6353A45AB} = {D8BFFD11-7AEB-49B0-9A6B-CE214E5E5A2B}
+		{BF901D3A-F681-40AB-B959-CFC3555392DF} = {26C082A6-399D-4FBF-A9AC-77287D77C074}
+		{7477F003-42B8-4EA4-B8CA-4832CB2431AE} = {26C082A6-399D-4FBF-A9AC-77287D77C074}
+		{A47DA5A4-15DB-472A-AC4D-E059583EDFB2} = {26C082A6-399D-4FBF-A9AC-77287D77C074}
+	EndGlobalSection
+EndGlobal

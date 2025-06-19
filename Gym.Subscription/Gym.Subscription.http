@@ -1,0 +1,6 @@
+@Gym.Subscription_HostAddress = http://localhost:5173
+
+GET {{Gym.Subscription_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
