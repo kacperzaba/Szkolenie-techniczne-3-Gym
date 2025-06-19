@@ -121,5 +121,19 @@ namespace Gym.FitnessClass.Services
             await _context.SaveChangesAsync();
             return true;
         }
+
+        public async Task<bool> Delete(int id)
+        {
+            var fc = await _context.FitnessClasses
+                .Include(f => f.Participants)
+                .FirstOrDefaultAsync(x => x.Id == id);
+
+            if (fc == null)
+                return false;
+
+            _context.FitnessClasses.Remove(fc);
+            await _context.SaveChangesAsync();
+            return true;
+        }
     }
 }

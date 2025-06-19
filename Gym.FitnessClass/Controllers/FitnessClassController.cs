@@ -11,11 +11,15 @@ namespace Gym.FitnessClass.Controllers
         private readonly IFitnessClassService _service;
 
         public FitnessClassController(IFitnessClassService service)
-            => _service = service;
+        {
+            _service = service;
+        }
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
-            => Ok(await _service.GetAll());
+        {
+            return Ok(await _service.GetAll());
+        }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
@@ -46,5 +50,13 @@ namespace Gym.FitnessClass.Controllers
             var result = await _service.AssignCustomer(id, custId);
             return result ? NoContent() : NotFound();
         }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var result = await _service.Delete(id);
+            return result ? NoContent() : NotFound();
+        }
+
     }
 }

@@ -135,5 +135,19 @@ namespace Gym.Client.Services
 
             return true;
         }
+
+        public async Task<bool> Delete(int id)
+        {
+            var customer = await _context.Customers
+                .Include(c => c.CustomerSubscriptions)
+                .FirstOrDefaultAsync(c => c.Id == id);
+
+            if (customer == null)
+                return false;
+
+            _context.Customers.Remove(customer);
+            await _context.SaveChangesAsync();
+            return true;
+        }
     }
 }

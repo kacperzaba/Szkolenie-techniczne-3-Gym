@@ -9,5 +9,6 @@ namespace Gym.Client.Services
         Task<CustomerWithSubscriptionsDto> GetById(int id);
         Task<CustomerDto> Update(int id, UpdateCustomerDto dto);
         Task<bool> AssignSubscription(int customerId, int subscriptionId);
+        Task<bool> Delete(int id);
     }
 }

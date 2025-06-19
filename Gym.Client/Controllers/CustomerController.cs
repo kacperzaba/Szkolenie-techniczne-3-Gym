@@ -52,5 +52,12 @@ namespace Gym.Client.Controllers
             var result = await _service.AssignSubscription(id, subId);
             return result ? NoContent() : NotFound();
         }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var deleted = await _service.Delete(id);
+            return deleted ? NoContent() : NotFound();
+        }
     }
 }
