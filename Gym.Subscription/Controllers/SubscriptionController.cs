@@ -16,6 +16,10 @@ namespace Gym.Subscription.Controllers
             _service = service;
         }
 
+        /// <summary>
+        /// Pobiera wszystkie subskrypcje.
+        /// </summary>
+        /// <returns>Lista wszystkich subskrypcji.</returns>
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -23,6 +27,11 @@ namespace Gym.Subscription.Controllers
             return Ok(subscriptions);
         }
 
+        /// <summary>
+        /// Pobiera subskrypcję na podstawie identyfikatora.
+        /// </summary>
+        /// <param name="id">Identyfikator subskrypcji.</param>
+        /// <returns>Subskrypcja o podanym identyfikatorze lub 404 jeśli nie istnieje.</returns>
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
@@ -31,6 +40,11 @@ namespace Gym.Subscription.Controllers
             return Ok(subscription);
         }
 
+        /// <summary>
+        /// Tworzy nową subskrypcję.
+        /// </summary>
+        /// <param name="dto">Dane nowej subskrypcji.</param>
+        /// <returns>Utworzona subskrypcja wraz z adresem zasobu.</returns>
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateSubscriptionDto dto)
         {
@@ -38,8 +52,13 @@ namespace Gym.Subscription.Controllers
             return CreatedAtAction(nameof(Get), new { id = created.Id }, created);
         }
 
+        /// <summary>
+        /// Aktualizuje istniejącą subskrypcję.
+        /// </summary>
+        /// <param name="id">Identyfikator subskrypcji do aktualizacji.</param>
+        /// <param name="dto">Zaktualizowane dane subskrypcji.</param>
+        /// <returns>Zaktualizowana subskrypcja lub 404 jeśli nie istnieje.</returns>
         [HttpPut("{id}")]
-
         public async Task<IActionResult> Update(int id, [FromBody] UpdateSubscriptionDto dto)
         {
             var updated = await _service.UpdateAsync(id, dto);
@@ -47,6 +66,11 @@ namespace Gym.Subscription.Controllers
             return Ok(updated);
         }
 
+        /// <summary>
+        /// Usuwa subskrypcję o podanym identyfikatorze.
+        /// </summary>
+        /// <param name="id">Identyfikator subskrypcji do usunięcia.</param>
+        /// <returns>Kod 204 jeśli usunięto lub 404 jeśli subskrypcja nie istnieje.</returns>
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {

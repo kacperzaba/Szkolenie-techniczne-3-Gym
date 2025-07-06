@@ -96,7 +96,7 @@ namespace GymUnitTests
 
             Assert.Equal(2, result.Count());
         }
-        //test
+
         [Fact]
         public async Task Update_ShouldChangeCustomer()
         {
